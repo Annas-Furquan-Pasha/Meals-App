@@ -11,20 +11,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  // final List<Category> categories = [
-  //   const Category(id: 'c1', title: 'italian', color: Colors.red),
-  //   const Category(id: 'c2', title: 'mexican'),
-  //   const Category(id: 'c3', title: 'indian', color: Colors.blueAccent),
-  //   const Category(id: 'c4', title: 'chinese'),
-  //   const Category(id: 'c5', title: 'thai'),
-  //   const Category(id: 'c6', title: 'japanese'),
-  //   const Category(id: 'c7', title: 'english', color: Colors.amber),
-  //   const Category(id: 'c8', title: 'vegetarian'),
-  // ];
-
   final appBar = AppBar(
     elevation: 0.0,
-    title: const Text('Meals App'),
+    title: const Text('Meals'),
   );
 
   @override
