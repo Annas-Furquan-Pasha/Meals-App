@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/screen/meal_steps.dart';
-import 'screen/home.dart';
+import 'package:meals_app/screen/meal_screen.dart';
+import './screen/tabs_screen.dart';
 import './screen/category_screen.dart';
 
 void main() => runApp(MaterialApp(
@@ -12,7 +12,7 @@ void main() => runApp(MaterialApp(
     fontFamily: 'Raleway',
   ),
   routes:{
-    '/' : (context) => const Home(),
+    '/' : (context) => const TabsScreen(),
     '/categoryScreen' : (context) => const CategoryScreen(),
     '/Meal_Screen': (context) => const MealSteps(),
   },
