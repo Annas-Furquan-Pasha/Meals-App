@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import '../dummy_data.dart';
+
 class MealSteps extends StatelessWidget {
-  const MealSteps({Key? key}) : super(key: key);
+
+  final Function toggleFavorites;
+  final Function isFavorite;
+
+  const MealSteps(this.toggleFavorites, this.isFavorite, {super.key});
 
   Widget builtContainer(List<String> list, double size){
     return Container(
@@ -76,6 +81,12 @@ class MealSteps extends StatelessWidget {
           builtHeading('Steps:', size),
           builtContainer(selectedMeal.steps, size),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => toggleFavorites(mealId),
+        child: Icon(
+          isFavorite(mealId) ? Icons.star : Icons.star_border,
+        ),
       ),
     );
   }
